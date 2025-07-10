@@ -29,22 +29,27 @@ export const updateLanguage = async(req, res) => {
     }
 };
 
-// export const getAllLanguage = async(req, res) => {
-//     try {
-        
-//     } catch (error) {
-        
-//     }
-// };
+// Funcion para obtener todos los lenguajes
+export const getAllLanguage = async (req, res) => {
+    try {
+        const language = await Language.findAll();
+        res.json(language);
+    } catch (error) {
+        res.status(500).json({errormessage: err.message});
+    }
+};
 
-// export const getByIdLanguage = async(req, res) => {
-//     try {
-        
-//     } catch (error) {
-        
-//     }
-// };
-
+// Funcion para obtener un Lenguaje por ID
+export const getLanguageByID = async (req, res) => {
+    try {
+        const language = await Language.findByPk(req.params.id);
+        res.json(language);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({errormessage: err.message});
+    }
+    
+};
 export const deleteLanguage = async(req, res) => {
     try {
         const deleteLanguage = await Language.destroy({where: {id: req.params.id}});
