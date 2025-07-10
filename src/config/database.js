@@ -21,3 +21,4 @@ export const startDB = async () => {
         console.log("Erro en la conección con la base de datos:", error);
     }
 };
+
