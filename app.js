@@ -1,3 +1,4 @@
+//importaciones
 import express from "express";
 import { startDB } from "./src/config/database.js";
 import { languageRoutes } from "./src/routes/language.routes.js";
