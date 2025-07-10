@@ -1,18 +1,26 @@
 {
-  "name": "books",
+  "name": "recuperatorio-segundo-parcial",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiColmena/recuperatorio-segundo-parcial-colman-maximo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "API REST para gestión de libros con Node.js, Express y Sequelize",
+  "bugs": {
+    "url": "https://github.com/MaxiColmena/recuperatorio-segundo-parcial-colman-maximo/issues"
+  },
+  "homepage": "https://github.com/MaxiColmena/recuperatorio-segundo-parcial-colman-maximo#readme",
+  "description": "",
   "dependencies": {
-    "dotenv": "^16.6.0",
+    "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "mysql2": "^3.14.1",
     "sequelize": "^6.37.7"
